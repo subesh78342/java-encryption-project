@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encryption Demo</title>
+</head>
+<body>
+
+<h2>Simple Encryption Demo</h2>
+
+<input type="text" id="text" placeholder="Enter text">
+
+<button onclick="encryptText()">Encrypt</button>
+
+<p id="result"></p>
+
+<script>
+function encryptText() {
+
+    let text =
+        document.getElementById("text").value;
+
+    let encrypted =
+        btoa(text);
+
+    document.getElementById("result").innerHTML =
+        "Encrypted: " + encrypted;
+}
+</script>
+
+</body>
+</html>
